@@ -4,7 +4,8 @@
 
 DOTFILES_ROOT="`pwd`"
 
-set -e
+# turn on the -e mode. i.e. any error in the script will terminate immediately
+set -e 
 
 echo ''
 
@@ -31,6 +32,7 @@ setup_gitconfig () {
   then
     info 'setup gitconfig'
 
+    # allow user to set the git details from terminal, the -e option (for read) enables auto-completion
     user ' - What is your github author name?'
     read -e git_authorname
     user ' - What is your github author email?'
