@@ -1,0 +1,4 @@
+Pry.config.color = true
+Pry.color = true
+
+Pry.config.theme = "github"
