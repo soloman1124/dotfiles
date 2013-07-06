@@ -1,1 +1,1 @@
-rvm use default
+# rvm use default

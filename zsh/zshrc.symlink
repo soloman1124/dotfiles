@@ -67,3 +67,4 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
 
+export PATH="bin:/usr/local/sbin:/usr/local/bin:$HOME/.rbenv/bin:$PATH"
