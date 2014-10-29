@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$DOTFILES/bin:$PATH
+PATH=$PATH:$DOTFILES/bin
 
 #Coffee Script
 PATH=/usr/local/share/npm/bin:$PATH
