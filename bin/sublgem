@@ -1,1 +1,0 @@
-subl `bundle show $1`

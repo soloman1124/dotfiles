@@ -1,0 +1,1 @@
+atom `bundle show $1`
