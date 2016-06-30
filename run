@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+homebrew () {
+  if test ! $(which brew)
+  then
+    echo "install homebrew..."
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+  fi
+}
+
+
+homebrew
+brew tap caskroom/cask
+brew install ansible
+
+
+echo 'All installed!'
