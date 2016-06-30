@@ -10,10 +10,21 @@ homebrew () {
   fi
 }
 
+base_homebrew_packages () {
+  if [[ -z "$(brew ls --versions ansible)" ]]
+  then
+    brew install ansible
+  fi
+
+  if [[ -z "$(brew tap | grep caskroom/cask)" ]]
+  then
+    brew tap caskroom/cask
+  fi
+}
+
+
 
 homebrew
-brew tap caskroom/cask
-brew install ansible
-
+base_homebrew_packages
 
 echo 'All installed!'
