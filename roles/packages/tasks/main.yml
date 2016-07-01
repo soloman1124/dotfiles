@@ -10,3 +10,9 @@
 
 - name: install oh-my-zsh
   include: oh_my_zsh.yml
+
+- name: vim setup
+  include: vim.yml
+
+- name: setup docker utilities
+  include: docker.yml

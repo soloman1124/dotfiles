@@ -1,0 +1,12 @@
+---
+- name: setup .vimrc file
+  template:
+    src: vimrc.j2
+    dest: "{{ build_dir }}/.vimrc"
+    mode: 0644
+
+- name: link .vimrc file
+  file:
+    src: "{{ build_dir }}/.vimrc"
+    dest: ~/.vimrc
+    state: link
