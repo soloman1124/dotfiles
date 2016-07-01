@@ -1,0 +1,7 @@
+---
+
+- name: install and setup soloman's machine
+  hosts: localhost
+  roles:
+    - { role: apps }
+    - { role: packages }

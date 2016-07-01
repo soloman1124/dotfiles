@@ -1,0 +1,14 @@
+---
+- name: install common apps
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - alfred
+    - atom
+    - calibre
+    - dropbox
+    - firefox
+    - gitter
+    - google-chrome
+    - mplayerx
+    - thunder
+    - ynab
