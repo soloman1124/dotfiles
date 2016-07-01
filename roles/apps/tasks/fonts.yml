@@ -1,0 +1,8 @@
+---
+- name: enable fonts installation on homebrew
+  homebrew_tap: name=caskroom/fonts state=present
+
+- name: install fonts
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - font-source-code-pro

@@ -1,4 +1,7 @@
 ---
+- name: use homebrew cask versions
+  homebrew_tap: tap=caskroom/versions state=present
+
 - name: install common apps
   homebrew_cask: name={{ item }} state=present
   with_items:
@@ -9,6 +12,10 @@
     - firefox
     - gitter
     - google-chrome
+    - iterm2-beta
     - mplayerx
     - thunder
     - ynab
+
+- name: install fonts
+  include: fonts.yml

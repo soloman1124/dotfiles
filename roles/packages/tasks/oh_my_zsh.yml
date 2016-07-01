@@ -1,0 +1,22 @@
+---
+- name: clone oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
+    update: no
+
+- name: setup .zshrc file
+  template:
+    src: zshrc.j2
+    dest: "{{ build_dir }}/.zshrc"
+    mode: 0644
+
+- name: link .zshrc file
+  file:
+    src: "{{ build_dir }}/.zshrc"
+    dest: ~/.zshrc
+    state: link
+
+- name: set zsh as default shell
+  user: name={{ ansible_user_id }} shell=/bin/zsh
+  become: yes

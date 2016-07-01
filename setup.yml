@@ -3,5 +3,6 @@
 - name: install and setup soloman's machine
   hosts: localhost
   roles:
+    - { role: base }
     - { role: apps }
     - { role: packages }

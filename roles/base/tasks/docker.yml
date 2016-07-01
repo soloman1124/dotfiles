@@ -1,0 +1,10 @@
+---
+- name: setup docker build dir
+  file:
+    dest: "{{ build_dir }}/docker"
+    state: directory
+
+- name: setup docker related aliases
+  copy:
+    src: docker_aliases.zsh
+    dest: "{{ build_dir }}/docker/aliases.zsh"

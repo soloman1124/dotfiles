@@ -27,6 +27,6 @@ base_homebrew_packages () {
 homebrew
 base_homebrew_packages
 
-ansible-playbook -vv setup.yml
+ansible-playbook --ask-sudo-pass -vv setup.yml
 
 echo 'All installed!'
