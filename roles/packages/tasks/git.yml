@@ -1,0 +1,12 @@
+---
+- name: setup .gitconfig file
+  copy:
+    src: gitconfig
+    dest: "{{ pref_dir }}/.gitconfig"
+    mode: 0644
+
+- name: link .gitconfig file
+  file:
+    src: "{{ pref_dir }}/.gitconfig"
+    dest: ~/.gitconfig
+    state: link

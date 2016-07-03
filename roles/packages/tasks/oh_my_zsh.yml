@@ -8,12 +8,12 @@
 - name: setup .zshrc file
   template:
     src: zshrc.j2
-    dest: "{{ build_dir }}/.zshrc"
+    dest: "{{ pref_dir }}/.zshrc"
     mode: 0644
 
 - name: link .zshrc file
   file:
-    src: "{{ build_dir }}/.zshrc"
+    src: "{{ pref_dir }}/.zshrc"
     dest: ~/.zshrc
     state: link
 
