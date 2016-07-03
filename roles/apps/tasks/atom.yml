@@ -1,0 +1,14 @@
+---
+- name: install atom
+  homebrew_cask: name=atom state=present
+
+- name: setup atom preference folder
+  copy:
+    src: atom/
+    dest: "{{ pref_dir }}/atom"
+
+- name: link .atom file
+  file:
+    src: "{{ pref_dir }}/atom"
+    dest: ~/.atom
+    state: link

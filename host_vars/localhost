@@ -1,3 +1,4 @@
 ---
 build_dir: ~/.dotfiles/build
+pref_dir: ~/.dotfiles/build/pref
 code_dir: ~/code

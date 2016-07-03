@@ -1,0 +1,94 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "fe1ac079-8e71-46df-b882-b2054643085c"
+    apex: {}
+    arduino: {}
+    beautifyEntireFileOnSave: false
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "41ca5832-7c93-4112-b2fe-6337609e4db1"
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    html_end_with_newline: true
+    html_indent_inner_html: true
+    jade: {}
+    java: {}
+    js: {}
+    js_indent_size: 4
+    json:
+      indent_size: 2
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
+  core:
+    disabledPackages: [
+      "linter-elixirc"
+    ]
+    excludeVcsIgnoredPaths: false
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    autoIndent: false
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "9bd7c5b9-b65d-005b-3b46-9c2d79a4476f"
+  hex: {}
+  linter: {}
+  "linter-elixirc": {}
+  "linter-jshint": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "python-isort":
+    checkOnSave: false
+    isortPath: "/usr/local/bin/isort"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".js.source":
+  editor:
+    tabLength: 2
+".json.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    tabLength: 4

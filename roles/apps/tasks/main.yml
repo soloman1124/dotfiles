@@ -12,10 +12,15 @@
     - firefox
     - gitter
     - google-chrome
-    - iterm2-beta
     - mplayerx
     - thunder
     - ynab
 
 - name: install fonts
   include: fonts.yml
+
+- name: install atom
+  include: atom.yml
+
+- name: install iterm2
+  include: iterm2.yml

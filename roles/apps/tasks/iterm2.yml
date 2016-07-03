@@ -1,0 +1,8 @@
+---
+- name: install iterm2
+  homebrew_cask: name=iterm2-beta state=present
+
+- name: setup preference file
+  copy:
+    src: iterm2/
+    dest: "{{ pref_dir }}/iterm2"
