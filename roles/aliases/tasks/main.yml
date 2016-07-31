@@ -1,0 +1,13 @@
+---
+- name: setup aliases dir
+  file:
+    dest: "{{ alias_dir }}"
+    state: directory
+
+- name: link alias zsh files
+  file:
+    src: "{{playbook_dir}}/roles/aliases/files/{{ item }}.zsh"
+    dest: "{{ alias_dir }}/{{ item }}.zsh"
+    state: link
+  with_items:
+    - docker

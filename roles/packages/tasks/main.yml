@@ -17,6 +17,3 @@
 
 - name: git setup
   include: git.yml
-
-- name: setup docker utilities
-  include: docker.yml
