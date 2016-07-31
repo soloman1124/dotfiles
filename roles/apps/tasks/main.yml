@@ -15,6 +15,7 @@
     - mplayerx
     - thunder
     - ynab
+    - docker
 
 - name: install fonts
   include: fonts.yml
