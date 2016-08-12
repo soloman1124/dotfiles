@@ -83,6 +83,10 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+".go.source":
+  editor:
+    tabLength: 2
+    tabType: "hard"
 ".js.source":
   editor:
     tabLength: 2
