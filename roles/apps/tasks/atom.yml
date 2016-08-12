@@ -12,3 +12,14 @@
     src: "{{ pref_dir }}/atom"
     dest: ~/.atom
     state: link
+
+- name: install atom packages
+  apm: name={{ item }} state=latest
+  with_items:
+    - file-icons
+    - atom-beautify
+    - minimap
+    - vim-mode
+    - merge-conflicts
+    - zen
+    - advanced-open-file
