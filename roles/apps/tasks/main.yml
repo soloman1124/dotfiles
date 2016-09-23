@@ -16,6 +16,7 @@
     - thunder
     - ynab
     - docker
+    - sourcetree
 
 - name: install fonts
   include: fonts.yml
