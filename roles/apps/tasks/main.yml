@@ -17,6 +17,7 @@
     - ynab
     - docker
     - sourcetree
+    - dash
 
 - name: install fonts
   include: fonts.yml
