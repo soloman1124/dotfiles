@@ -18,6 +18,9 @@
     - docker
     - sourcetree
     - dash
+    - virtualbox
+    - virtualbox-extension-pack
+    - vagrant
 
 - name: install fonts
   include: fonts.yml
