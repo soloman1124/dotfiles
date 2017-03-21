@@ -20,3 +20,6 @@ alias docker-gore='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app so
 alias docker-devtools=_docker_devtools
 
 alias dc-bash=_docker_compose_bash
+
+# specific to intellihr
+alias docker-ecr-login=`aws ecr get-login`
