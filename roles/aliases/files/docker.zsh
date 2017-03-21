@@ -22,4 +22,4 @@ alias docker-devtools=_docker_devtools
 alias dc-bash=_docker_compose_bash
 
 # specific to intellihr
-alias docker-ecr-login=`aws ecr get-login`
+alias docker-ecr-login='`aws ecr get-login`'
