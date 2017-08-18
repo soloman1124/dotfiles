@@ -19,7 +19,9 @@
     - file-icons
     - atom-beautify
     - minimap
-    - vim-mode
     - merge-conflicts
     - zen
     - advanced-open-file
+    - atom-material-ui
+    - autocomplete-paths
+    - vim-mode-plus
