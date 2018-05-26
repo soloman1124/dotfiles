@@ -1,9 +1,17 @@
 ---
-- name: check if {{ item.app }} is installed
+- name: check if {{ item.app }} is installed (deb)
   command: dpkg-query -W {{ item.app }}
   register: app_check_deb
   failed_when: app_check_deb.rc > 1
   changed_when: app_check_deb.rc == 1
+  when: item.deb is defined
+- name: check if {{ item.app }} is installed (snap)
+  command: snap list {{ item.app }}
+  register: app_check_snap
+  failed_when: app_check_snap.rc > 1
+  changed_when: app_check_snap.rc == 1
+  when: item.snap is defined
+
 - name: install {{ item.app }} (deb)
   become: yes
   apt:
@@ -16,3 +24,7 @@
     state: present
     name: "{{ item.package }}"
   when: item.package is defined
+- name: install {{ item.app }} (snap)
+  become: yes
+  command: snap install {{ item.snap }} --classic
+  when: item.snap is defined and app_check_snap.rc == 1

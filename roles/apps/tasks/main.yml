@@ -1,4 +1,10 @@
 ---
+- name: install snap package manager
+  become: yes
+  apt:
+    name: snap
+    state: present
+
 - name: install common apps (deb)
   become: yes
   include: install_app.yml
@@ -9,9 +15,18 @@
       package: tilix
     - app: zeal
       package: zeal
+    - app: datagrip
+      snap: datagrip
+    - app: slack
+      snap: slack
+    - app: gitkraken
+      snap: gitkraken
 
 - name: install fonts
   include: fonts.yml
 
 - name: install atom
   include: atom.yml
+
+- name: install docker
+  include: docker.yml
