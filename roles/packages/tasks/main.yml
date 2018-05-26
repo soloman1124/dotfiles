@@ -1,13 +1,16 @@
 ---
-- name: install homebrew packages
-  homebrew: name={{ item }} state=present
+- name: install apt packages
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
   with_items:
     - awscli
     - coreutils
     - grc
-    - hub
     - siege
     - tig
+    - vim
 
 - name: install oh-my-zsh
   include: oh_my_zsh.yml

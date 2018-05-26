@@ -10,3 +10,9 @@
     path: "{{ code_dir }}"
     state: directory
     mode: 0755
+
+- name: setup font folder
+  file:
+    path: "{{ font_dir }}"
+    state: directory
+    mode: 0755

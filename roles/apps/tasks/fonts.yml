@@ -1,8 +1,42 @@
 ---
-- name: enable fonts installation on homebrew
-  homebrew_tap: name=caskroom/fonts state=present
+- name: check font already installed - hack
+  stat:
+    path:  "{{ font_dir }}/Hack"
+  register: font_hack_check
+- name: ensure font folder - hack
+  file:
+    path: "{{ font_dir }}/Hack"
+    state: directory
+    mode: 0755
+  when: not font_hack_check.stat.exists
+- name: install fonts - hack
+  unarchive:
+    src: https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
+    dest: "{{ font_dir }}/Hack"
+    remote_src: yes
+  when: not font_hack_check.stat.exists
 
-- name: install fonts
-  homebrew_cask: name={{ item }} state=present
+- name: check font already installed - SourceCodePro
+  find: paths="{{ font_dir }}/SourceCodePro" file_type=directory patterns="*.ttf"
+  register: font_source_code_pro_check
+- name: ensure font folder - SourceCodePro
+  file:
+    path: "{{ font_dir }}/SourceCodePro"
+    state: directory
+    mode: 0755
+  when: font_source_code_pro_check.matched|int == 0
+- name: install fonts - SourceCodePro
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ font_dir }}/SourceCodePro/{{ item.file }}"
+    remote_src: yes
   with_items:
-    - font-source-code-pro
+    - file: SourceCodeVariable-Roman.ttf
+      url: https://github.com/adobe-fonts/source-code-pro/releases/download/variable-fonts/SourceCodeVariable-Roman.ttf
+    - file: SourceCodeVariable-Italic.ttf
+      url: https://github.com/adobe-fonts/source-code-pro/releases/download/variable-fonts/SourceCodeVariable-Italic.ttf
+  when: font_source_code_pro_check.matched|int == 0
+
+- name: update font cache
+  command: fc-cache -fv
+  become: yes

@@ -3,3 +3,4 @@ build_dir: ~/.dotfiles/build
 pref_dir: ~/.dotfiles/build/pref
 alias_dir: ~/.dotfiles/build/aliases
 code_dir: ~/code
+font_dir: ~/.fonts

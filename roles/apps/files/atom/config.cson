@@ -64,7 +64,7 @@
     ]
   editor:
     autoIndent: false
-    fontFamily: "Source Code Pro"
+    fontFamily: "Source Code Variable, Light"
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true

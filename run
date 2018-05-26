@@ -2,31 +2,17 @@
 
 set -e
 
-homebrew () {
-  if test ! $(which brew)
+install_ansible () {
+  if test ! $(which ansible)
   then
-    echo "install homebrew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  fi
-}
-
-base_homebrew_packages () {
-  if [[ -z "$(brew ls --versions ansible)" ]]
-  then
-    brew install ansible
-  fi
-
-  if [[ -z "$(brew tap | grep caskroom/cask)" ]]
-  then
-    brew tap caskroom/cask
+    echo "install ansible..."
+    sudo apt install -y ansible 
   fi
 }
 
 
+install_ansible
 
-homebrew
-base_homebrew_packages
-
-ansible-playbook --ask-sudo-pass -vv $(dirname $0)/setup.yml
+ansible-playbook --ask-become-pass -vv $(dirname $0)/setup.yml
 
 echo 'All installed!'

@@ -1,5 +1,4 @@
 ---
-
 - name: install and setup soloman's machine
   hosts: localhost
   roles:

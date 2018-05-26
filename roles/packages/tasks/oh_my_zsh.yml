@@ -1,4 +1,10 @@
 ---
+- name: install zsh
+  become: yes
+  apt:
+    name: zsh
+    state: present
+
 - name: clone oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
