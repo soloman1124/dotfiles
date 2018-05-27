@@ -1,0 +1,10 @@
+---
+- name: install tilix
+  become: yes
+  apt:
+    state: present
+    name: tilix
+
+- name: load tilix dconf
+  become: yes
+  command: dconf load /com/gexperts/Tilix/ < tilix/tilix.dconf

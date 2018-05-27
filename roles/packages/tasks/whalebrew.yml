@@ -9,6 +9,7 @@
 - name: install whalebrew packages
   become: yes
   command: whalebrew install {{ item.image }} -y -n {{ item.name }}
+  ignore_errors: yes
   with_items:
     - name: yapf
       image: quay.io/intellihr/yapf

@@ -34,6 +34,9 @@
     - app: mpv-casept
       snap: mpv-casept
 
+- name: install tilix
+  include: tilix.yml
+
 - name: install fonts
   include: fonts.yml
 
