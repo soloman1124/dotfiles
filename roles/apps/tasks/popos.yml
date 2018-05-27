@@ -1,0 +1,14 @@
+---
+- name: add Pop OS repository
+  become: yes
+  apt_repository:
+    repo: ppa:system76/pop
+    state: present
+- name: install Pop OS Theme
+  become: yes
+  apt:
+    name: pop-theme
+    state: present
+  with_items:
+    - pop-theme
+    - pop-wallpapers

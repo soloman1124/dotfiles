@@ -5,14 +5,24 @@
     name: snap
     state: present
 
-- name: install common apps (deb)
+- name: install common apps
   become: yes
   include: install_app.yml
   with_items:
+    - app: gnome-tweak-tool
+      package: gnome-tweak-tool
+    - app: gnome-shell-extensions
+      package: gnome-shell-extensions
     - app: google-chrome-stable
       deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - app: boostnote
+      deb: https://github.com/BoostIO/boost-releases/releases/download/v0.11.4/boostnote_0.11.4_amd64.deb
     - app: tilix
       package: tilix
+    - app: dropbox
+      package: nautilus-dropbox
+    - app: openvpn
+      package: openvpn
     - app: zeal
       package: zeal
     - app: datagrip
@@ -30,3 +40,6 @@
 
 - name: install docker
   include: docker.yml
+
+- name: install Pop OS
+  include: popos.yml
