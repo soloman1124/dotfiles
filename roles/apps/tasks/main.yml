@@ -31,6 +31,8 @@
       snap: slack
     - app: gitkraken
       snap: gitkraken
+    - app: mpv-casept
+      snap: mpv-casept
 
 - name: install fonts
   include: fonts.yml

@@ -15,6 +15,9 @@
 - name: install oh-my-zsh
   include: oh_my_zsh.yml
 
+- name: install whalebrew with related tools
+  include: whalebrew.yml
+
 - name: vim setup
   include: vim.yml
 

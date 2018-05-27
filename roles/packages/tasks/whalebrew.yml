@@ -1,0 +1,14 @@
+---
+- name: install whalebrew
+  become: yes
+  get_url:
+    url: https://github.com/bfirsh/whalebrew/releases/download/0.1.0/whalebrew-Linux-x86_64
+    dest: /usr/local/bin/whalebrew
+    mode: 0755
+
+- name: install whalebrew packages
+  become: yes
+  command: whalebrew install {{ item.image }} -y -n {{ item.name }}
+  with_items:
+    - name: yapf
+      image: quay.io/intellihr/yapf
