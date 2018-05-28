@@ -23,6 +23,8 @@
       package: nautilus-dropbox
     - app: openvpn
       package: openvpn
+    - app: network-manager-openvpn-gnome
+      package: network-manager-openvpn-gnome
     - app: zeal
       package: zeal
     - app: datagrip
