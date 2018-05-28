@@ -13,3 +13,5 @@
   with_items:
     - name: yapf
       image: quay.io/intellihr/yapf
+    - name: yarn
+      image: quay.io/intellihr/whalebrew-yarn:1.6.0

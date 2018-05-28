@@ -17,6 +17,8 @@
       deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - app: boostnote
       deb: https://github.com/BoostIO/boost-releases/releases/download/v0.11.4/boostnote_0.11.4_amd64.deb
+    - app: albert
+      deb: https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/amd64/albert_0.14.19_amd64.deb
     - app: tilix
       package: tilix
     - app: dropbox
@@ -27,6 +29,8 @@
       package: network-manager-openvpn-gnome
     - app: zeal
       package: zeal
+    - app: copyq
+      package: copyq
     - app: datagrip
       snap: datagrip
     - app: slack
