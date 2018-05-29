@@ -33,6 +33,8 @@
       package: copyq
     - app: gnome-dictionary
       package: gnome-dictionary
+    - app: zenity
+      package: zenity
     - app: datagrip
       snap: datagrip
     - app: slack
