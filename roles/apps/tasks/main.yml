@@ -41,6 +41,8 @@
       snap: gitkraken
     - app: mpv-casept
       snap: mpv-casept
+    - app: mailspring
+      snap: mailspring
 
 - name: install tilix
   include: tilix.yml
