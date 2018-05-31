@@ -19,6 +19,9 @@
 - name: install whalebrew with related tools
   include: whalebrew.yml
 
+- name: install hub
+  include: hub.yml
+
 - name: vim setup
   include: vim.yml
 
