@@ -35,6 +35,12 @@
       package: gnome-dictionary
     - app: zenity
       package: zenity
+    - app: calibre
+      package: calibre
+    - app: flameshot
+      package: flameshot
+    - app: evolution-ews
+      package: evolution-ews
     - app: datagrip
       snap: datagrip
     - app: slack
