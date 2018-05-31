@@ -30,6 +30,7 @@
     - atom-beautify
     - minimap
     - vim-mode-plus
+    - relative-numbers
     - merge-conflicts
     - zen
     - advanced-open-file
