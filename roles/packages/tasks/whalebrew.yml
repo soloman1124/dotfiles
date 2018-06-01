@@ -21,6 +21,8 @@
       image: whalebrew/rar
     - name: unrar
       image: whalebrew/unrar
+    - name: ag
+      image: whalebrew/the_silver_searcher
     - name: yapf
       image: quay.io/intellihr/yapf
     - name: yarn
