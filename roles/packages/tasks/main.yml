@@ -12,6 +12,7 @@
     - tig
     - vim
     - curl
+    - htop
 
 - name: install oh-my-zsh
   include: oh_my_zsh.yml

@@ -8,10 +8,24 @@
 
 - name: install whalebrew packages
   become: yes
-  command: whalebrew install {{ item.image }} -y -n {{ item.name }}
+  command:  whalebrew install {{ item.image }} -y -n {{ item.name }}
   ignore_errors: yes
   with_items:
+    - name: shellcheck
+      image: whalebrew/shellcheck
+    - name: speedtest
+      image: whalebrew/speedtest
+    - name: hugo
+      image: whalebrew/hugo
+    - name: rar
+      image: whalebrew/rar
+    - name: unrar
+      image: whalebrew/unrar
     - name: yapf
       image: quay.io/intellihr/yapf
     - name: yarn
       image: quay.io/intellihr/whalebrew-yarn:1.6.0
+    - name: ptpython
+      image: quay.io/intellihr/whalebrew-ptpython:0.41
+    - name: http
+      image: quay.io/intellihr/whalebrew-httpie:0.9.9
