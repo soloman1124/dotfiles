@@ -23,6 +23,10 @@
       image: whalebrew/unrar
     - name: ag
       image: whalebrew/the_silver_searcher
+    - name: awslogs
+      image: whalebrew/awslogs
+    - name: figlet
+      image: whalebrew/figlet
     - name: yapf
       image: quay.io/intellihr/yapf
     - name: yarn
