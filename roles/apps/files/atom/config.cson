@@ -58,6 +58,16 @@
       "linter-elixirc"
     ]
     excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
@@ -65,6 +75,7 @@
   editor:
     autoIndent: false
     fontFamily: "Source Code Variable, Light"
+    fontSize: 16
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
