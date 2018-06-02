@@ -41,6 +41,8 @@
       package: flameshot
     - app: evolution-ews
       package: evolution-ews
+    - app: fbreader
+      package: fbreader
     - app: datagrip
       snap: datagrip
     - app: slack
