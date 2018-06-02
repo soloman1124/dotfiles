@@ -41,8 +41,6 @@
       package: flameshot
     - app: evolution-ews
       package: evolution-ews
-    - app: fbreader
-      package: fbreader
     - app: datagrip
       snap: datagrip
     - app: slack
@@ -53,8 +51,8 @@
       snap: mpv-casept
     - app: mailspring
       snap: mailspring
-    - app: buka
-      snap: buka
+    - app: bookworm
+      snap: bookworm
 
 - name: install tilix
   include: tilix.yml
