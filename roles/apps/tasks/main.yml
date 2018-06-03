@@ -51,8 +51,8 @@
       snap: mpv-casept
     - app: mailspring
       snap: mailspring
-    - app: bookworm
-      snap: bookworm
+    - app: buka
+      snap: buka
 
 - name: install tilix
   include: tilix.yml
@@ -65,6 +65,9 @@
 
 - name: install docker
   include: docker.yml
+
+- name: install Bookworm
+  include: bookworm.yml
 
 - name: install Pop OS
   include: popos.yml
