@@ -51,8 +51,6 @@
       snap: mpv-casept
     - app: mailspring
       snap: mailspring
-    - app: buka
-      snap: buka
 
 - name: install tilix
   include: tilix.yml
