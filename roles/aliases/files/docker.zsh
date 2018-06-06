@@ -9,5 +9,6 @@ alias docker-ruby='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app ru
 alias docker-node='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app node:0.10 /bin/bash'
 alias docker-go='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app --entrypoint /bin/bash soloman1124/go-tools:latest'
 alias docker-gore='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app soloman1124/go-tools:latest'
+alias docker-jupyter='docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/tensorflow-notebook:latest'
 
 alias dc-bash=_docker_compose_bash
