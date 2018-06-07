@@ -1,9 +1,7 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "fe1ac079-8e71-46df-b882-b2054643085c"
     apex: {}
     arduino: {}
-    beautifyEntireFileOnSave: false
     c: {}
     cfml: {}
     coffeescript: {}
@@ -15,16 +13,17 @@
     erb: {}
     fortran: {}
     general:
-      _analyticsUserId: "41ca5832-7c93-4112-b2fe-6337609e4db1"
+      _analyticsUserId: "fe1ac079-8e71-46df-b882-b2054643085c"
+      beautifyEntireFileOnSave: false
     gherkin: {}
     handlebars: {}
-    html: {}
-    html_end_with_newline: true
-    html_indent_inner_html: true
+    html:
+      end_with_newline: true
+      indent_inner_html: true
     jade: {}
     java: {}
-    js: {}
-    js_indent_size: 4
+    js:
+      indent_size: 4
     json:
       indent_size: 2
     jsx: {}
