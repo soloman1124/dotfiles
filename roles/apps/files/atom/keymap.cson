@@ -28,6 +28,7 @@
   'ctrl-c': 'core:copy'
   'ctrl-x': 'core:cut'
   'ctrl-v': 'core:paste'
+  'alt-r': 'symbols-view:toggle-file-symbols'
 
 'atom-text-editor.vim-mode-plus.insert-mode':
   'ctrl-c': 'core:copy'
