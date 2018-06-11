@@ -3,3 +3,4 @@ httpless() {
 }
 
 alias say=spd-say
+alias open=xdg-open

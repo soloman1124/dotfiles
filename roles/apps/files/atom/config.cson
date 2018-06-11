@@ -35,7 +35,9 @@
     pawn: {}
     perl: {}
     php: {}
-    python: {}
+    python:
+      default_beautifier: "yapf"
+      formatter: "yapf"
     riot: {}
     ruby: {}
     rust: {}
@@ -74,7 +76,7 @@
   editor:
     autoIndent: false
     fontFamily: "Source Code Variable, Light"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
