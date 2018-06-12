@@ -36,3 +36,4 @@
     - advanced-open-file
     - split-diff
     - pretty-json
+    - tree-view-copy-relative-path
