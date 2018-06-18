@@ -41,6 +41,8 @@
       package: flameshot
     - app: evolution-ews
       package: evolution-ews
+    - app: kazam
+      package: kazam
     - app: datagrip
       snap: datagrip
     - app: slack

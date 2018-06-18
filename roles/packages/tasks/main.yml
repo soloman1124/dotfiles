@@ -13,6 +13,7 @@
     - vim
     - curl
     - htop
+    - libcanberra-gtk-module
 
 - name: install oh-my-zsh
   include: oh_my_zsh.yml
