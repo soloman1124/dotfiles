@@ -24,6 +24,9 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
+'atom-text-editor':
+    'ctrl-f': 'find-and-replace:show'
+
 'atom-text-editor.vim-mode-plus':
   'ctrl-c': 'core:copy'
   'ctrl-x': 'core:cut'
