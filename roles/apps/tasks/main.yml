@@ -53,6 +53,8 @@
       snap: mpv-casept
     - app: mailspring
       snap: mailspring
+    - app: winds
+      snap: winds
 
 - name: install tilix
   include: tilix.yml
