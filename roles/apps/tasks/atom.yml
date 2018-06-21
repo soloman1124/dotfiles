@@ -38,3 +38,4 @@
     - pretty-json
     - tree-view-copy-relative-path
     - autocomplete-python-jedi
+    - hyperclick
