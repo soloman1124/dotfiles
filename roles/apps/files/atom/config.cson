@@ -54,7 +54,10 @@
     visualforce: {}
     xml: {}
     xtemplate: {}
+  "autocomplete-python-jedi":
+    useSnippets: "all"
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "linter-elixirc"
     ]
@@ -69,6 +72,7 @@
       "desktop.ini"
       "node_modules"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
@@ -101,10 +105,13 @@
     tabType: "hard"
 ".js.source":
   editor:
+    autoIndent: true
     tabLength: 2
 ".json.source":
   editor:
     tabLength: 2
 ".python.source":
   editor:
+    autoIndent: true
+    autoIndentOnPaste: true
     tabLength: 4
