@@ -2,7 +2,7 @@
 - name: install whalebrew
   become: yes
   get_url:
-    url: https://github.com/bfirsh/whalebrew/releases/download/0.1.0/whalebrew-Linux-x86_64
+    url: https://github.com/soloman1124/whalebrew/releases/download/0.1.1/whalebrew_linux_amd64
     dest: /usr/local/bin/whalebrew
     mode: 0755
 

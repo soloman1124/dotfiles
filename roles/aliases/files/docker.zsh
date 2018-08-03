@@ -10,6 +10,14 @@ _docker_devtools() {
   fi
 }
 
+_whalebrew_shell() {
+  if [ $# -eq 1 ]; then
+    whalebrew run --entrypoint=/bin/sh $(which $1)
+  elif [ $# -eq 2 ]; then
+    whalebrew run --entrypoint=$2 $(which $1)
+  fi
+}
+
 alias docker-ps-cleanup='docker ps -aq -f status=exited | xargs docker rm'
 alias docker-cleanup='docker system prune'
 alias docker-elixir='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app trenpixster/elixir:latest /bin/bash'
@@ -22,3 +30,5 @@ alias docker-jupyter='docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work j
 
 alias docker-devtools=_docker_devtools
 alias dc-bash=_docker_compose_bash
+
+alias whalebrew-shell=_whalebrew_shell
