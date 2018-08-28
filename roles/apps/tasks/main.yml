@@ -19,6 +19,8 @@
       deb: https://github.com/BoostIO/boost-releases/releases/download/v0.11.4/boostnote_0.11.4_amd64.deb
     - app: albert
       deb: https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/amd64/albert_0.14.19_amd64.deb
+    - app: ripgrep
+      deb: https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep_0.9.0_amd64.deb
     - app: tilix
       package: tilix
     - app: dropbox

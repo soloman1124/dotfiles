@@ -39,3 +39,4 @@
     - tree-view-copy-relative-path
     - autocomplete-python-jedi
     - hyperclick
+    - goto-definition
