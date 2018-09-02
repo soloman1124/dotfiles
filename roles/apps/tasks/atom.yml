@@ -40,3 +40,4 @@
     - autocomplete-python-jedi
     - hyperclick
     - goto-definition
+    - color-picker
