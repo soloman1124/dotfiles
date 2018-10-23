@@ -15,6 +15,7 @@
     - htop
     - libcanberra-gtk-module
     - openjdk-11-jdk
+    - linux-oem
 
 - name: install oh-my-zsh
   include: oh_my_zsh.yml
