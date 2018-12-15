@@ -57,6 +57,8 @@
       snap: mailspring
     - app: winds
       snap: winds
+    - app: vscode
+      snap: vscode
 
 - name: install tilix
   include: tilix.yml
