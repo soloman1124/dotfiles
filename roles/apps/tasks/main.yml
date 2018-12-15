@@ -43,6 +43,8 @@
       package: flameshot
     - app: evolution-ews
       package: evolution-ews
+    - app: xsel
+      package: xsel
     - app: kazam
       package: kazam
     - app: datagrip
