@@ -47,8 +47,6 @@
       package: xsel
     - app: kazam
       package: kazam
-    - app: datagrip
-      snap: datagrip
     - app: slack
       snap: slack
     - app: gitkraken
@@ -60,7 +58,7 @@
     - app: winds
       snap: winds
     - app: vscode
-      snap: vscode
+      snap: code
 
 - name: install tilix
   include: tilix.yml
