@@ -59,6 +59,8 @@
       snap: winds
     - app: vscode
       snap: code
+    - app: insomnia
+      snap: insomnia
 
 - name: install tilix
   include: tilix.yml
