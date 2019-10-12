@@ -39,3 +39,5 @@
       image: whalebrew/jq
     - name: cargo
       image: quay.io/intellihr/whalebrew-cargo:1.37.0
+    - name: crystal
+      image: quay.io/intellihr/whalebrew-crystal:0.31.0
