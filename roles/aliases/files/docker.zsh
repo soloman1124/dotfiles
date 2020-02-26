@@ -26,6 +26,7 @@ alias docker-node='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app no
 alias docker-go='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app --entrypoint /bin/bash soloman1124/go-tools:latest'
 alias docker-gore='docker run --rm -ti -v $(pwd):/usr/src/app -w /usr/src/app soloman1124/go-tools:latest'
 alias docker-jupyter='docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/tensorflow-notebook:latest'
+alias dive='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest'
 
 
 alias docker-devtools=_docker_devtools
