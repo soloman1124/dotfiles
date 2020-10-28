@@ -1,0 +1,29 @@
+[user]
+        name = Soloman Weng
+        email = soloman1124@gmail.com
+[alias]
+        co = checkout
+        count   = !git shortlog -sn
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        default = simple
+[mergetool]
+        prompt = false
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true

@@ -13,21 +13,15 @@
     - vim
     - curl
     - htop
-    - libcanberra-gtk-module
-    - openjdk-11-jdk
-    - linux-oem
 
 - name: install oh-my-zsh
-  include: oh_my_zsh.yml
+  include_tasks: oh_my_zsh.yml
 
 - name: install whalebrew with related tools
-  include: whalebrew.yml
-
-- name: install hub
-  include: hub.yml
+  include_tasks: whalebrew.yml
 
 - name: vim setup
-  include: vim.yml
+  include_tasks: vim.yml
 
 - name: git setup
-  include: git.yml
+  include_tasks: git.yml

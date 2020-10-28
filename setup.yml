@@ -1,8 +1,10 @@
 ---
-- name: install and setup soloman's machine
-  hosts: localhost
+- name: install and setup ubuntu host (wsl2)
+  hosts: ubuntu
   roles:
-    - { role: base }
-    - { role: apps }
-    - { role: packages }
-    - { role: aliases }
+  - { role: ubuntu }
+
+- name: install and setup windows machine
+  hosts: windows
+  roles:
+  - { role: windows }

@@ -1,0 +1,20 @@
+---
+- name: install chocolatey apps
+  win_chocolatey:
+    state: present
+    name:
+    - altair-graphql
+    - GoogleChrome
+    - insomnia-rest-api-client
+    - jetbrainstoolbox
+    - notion
+    - powertoys
+    - sharex
+    - slack
+
+- name: install chocolately apps (pre)
+  win_chocolatey:
+    allow_prerelease: true
+    state: present
+    name:
+    - microsoft-windows-terminal

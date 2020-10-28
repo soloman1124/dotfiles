@@ -8,7 +8,7 @@
 
 - name: install whalebrew packages
   become: yes
-  command:  whalebrew install {{ item.image }} -y -n {{ item.name }}
+  command: whalebrew install {{ item.image }} -y -n {{ item.name }}
   ignore_errors: yes
   with_items:
     - name: shellcheck
@@ -17,10 +17,6 @@
       image: whalebrew/speedtest
     - name: hugo
       image: whalebrew/hugo
-    - name: rar
-      image: whalebrew/rar
-    - name: unrar
-      image: whalebrew/unrar
     - name: ag
       image: whalebrew/the_silver_searcher
     - name: awslogs

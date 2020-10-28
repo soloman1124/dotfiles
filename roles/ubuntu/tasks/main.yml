@@ -1,0 +1,9 @@
+---
+- name: base setup
+  include_tasks: base.yml
+
+- name: install packages
+  include_tasks: packages.yml
+
+- name: install alias
+  include_tasks: alias.yml

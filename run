@@ -6,13 +6,13 @@ install_ansible () {
   if test ! $(which ansible)
   then
     echo "install ansible..."
-    sudo apt install -y ansible 
+    sudo apt install -y ansible
   fi
 }
 
 
 install_ansible
 
-ansible-playbook --ask-become-pass -vv $(dirname $0)/setup.yml
+ansible-playbook -i $(dirname $0)/hosts.yml --ask-become-pass --ask-pass -vv $(dirname $0)/setup.yml
 
 echo 'All installed!'
