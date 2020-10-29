@@ -13,6 +13,8 @@ install_ansible () {
 
 install_ansible
 
-ansible-playbook -i $(dirname $0)/hosts.yml --ask-become-pass --ask-pass -vv $(dirname $0)/setup.yml
+windows_host=$(cat /etc/resolv.conf|grep nameserver|awk '{ print $2 }')
+
+ansible-playbook -i $(dirname $0)/hosts.yml --ask-become-pass --ask-pass -vv $(dirname $0)/setup.yml -e ansible_host=${windows_host}
 
 echo 'All installed!'
