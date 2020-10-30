@@ -27,3 +27,9 @@
     src: files/.wslconfig
     dest: "{{ ansible_env.USERPROFILE }}\\.wslconfig"
     force: true
+
+# It is unclear if the location will be correct
+- name: set settings.json for windows terminal
+  win_copy:
+    src: files/windows_terminal_settings.json
+    dest: "{{ ansible_env.USERPROFILE }}\\AppData\\Local\\Packages\\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\\LocalState\\settings.json"
