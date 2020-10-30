@@ -7,3 +7,6 @@
 
 - name: install alias
   include_tasks: alias.yml
+
+- name: setup vscode
+  include_tasks: vscode.yml

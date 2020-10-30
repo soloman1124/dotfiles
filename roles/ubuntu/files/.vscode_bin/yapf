@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# https://gist.github.com/soloman1124/0fa76f0fdf5b199cd77ab5865fd858d4
+
+comandline=$@
+workdir=$(pwd)/
+command="${comandline/$workdir/}"
+echo $comandline > test.txt
+exec yapf $command

@@ -1,0 +1,21 @@
+---
+
+# https://gist.github.com/soloman1124/0fa76f0fdf5b199cd77ab5865fd858d4
+- name: create vscode bin folder
+  file:
+    dest: "{{ build_dir }}/.vscode_bin"
+    state: directory
+
+- name: copy vscode bin scripts
+  copy:
+    src: "{{ role_path }}/files/.vscode_bin/{{ item.command }}"
+    dest: "{{ build_dir }}/.vscode_bin/{{ item.command }}"
+    mode: 0755
+  with_items:
+    - command: yapf
+
+- name: link vscode bin
+  file:
+    src: "{{ build_dir }}/.vscode_bin"
+    dest: ~/.vscode_bin
+    state: link
