@@ -24,7 +24,7 @@
     - name: figlet
       image: whalebrew/figlet
     - name: yapf
-      image: quay.io/intellihr/yapf
+      image: quay.io/intellihr/whalebrew-yapf:0.30.0
     - name: yarn
       image: quay.io/intellihr/whalebrew-yarn:1.6.0
     - name: ptpython

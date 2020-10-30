@@ -3,8 +3,12 @@
   hosts: ubuntu
   roles:
   - { role: ubuntu }
+  tags:
+  - wsl
 
 - name: install and setup windows machine
   hosts: windows
   roles:
   - { role: windows }
+  tags:
+  - windows

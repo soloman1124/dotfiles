@@ -19,3 +19,11 @@
     state: present
     name:
     - microsoft-windows-terminal
+
+# limit wsl2 docker resource
+# https://github.com/microsoft/WSL/issues/4166
+- name: limit wsl2 memory usage and cpu cores
+  win_copy:
+    src: files/.wslconfig
+    dest: "{{ ansible_env.USERPROFILE }}\\.wslconfig"
+    force: true
